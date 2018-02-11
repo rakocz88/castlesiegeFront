@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="card main-panel">
+		<div class="card-header">Register a new user</div>
+		<div class="card-body">
+			<div class="main-panel">
+				<form>
+						<div class="form-group">
+						<label for="email">Email</label> <input type="email" id="email"
+							#email class="form-control" placeholder="email"  disabled ={{emailSend}}  />
+					</div>
+					<div class="form-group">
+						<label for="password">password</label> <input type="password"
+							#password id="password" class="form-control"
+							placeholder="password"  disabled ={{emailSend}} />
+					</div>
+					<div class="text-center" *ngIf="!emailSend">
+						<button type="submit" class="btn btn-primary" (click)="register()" disabled ={{emailSend}} >Register</button>
+						<a class="btn btn-danger" routerLink="" >Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card-footer" *ngIf="emailSend">
+			<div class="form-group">
+				<label for="verificationCode">Verification Code</label> <input
+					type="text" id="verificationCode" #verificationCode
+					class="form-control" placeholder="Verification Code" />
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-primary" (click)="verifyCode()">Verify Code</button>
+				<a class="btn btn-danger" routerLink="">Cancel</a>
+			</div>
+		</div>
+	</div>
+</div>

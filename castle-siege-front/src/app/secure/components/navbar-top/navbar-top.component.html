@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-faded">
+	<a class="navbar-brand" href="/secure/home">Castle Siege</a>
+
+	<div class="nav-item">
+		<a class="nav-link" routerLink="/secure/quick-game">Quick Game</a>
+	</div>
+	<div id="navbarNavDropdown" class="navbar-collapse collapse">
+		<ul class="navbar-nav mr-auto">
+			<div ngbDropdown class="d-inline-block">
+				<button class="btn btn-outline-primary" id="dropdownBasic1"
+					ngbDropdownToggle>Games</button>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button class="dropdown-item">Quick Match</button>
+					<button class="dropdown-item">Tournament</button>
+					<button class="dropdown-item">Battle Friends</button>
+				</div>
+			</div>
+		</ul>
+		<ul class="navbar-nav mr-auto">
+			<div ngbDropdown class="d-inline-block">
+				<button class="btn btn-outline-primary" id="dropdownBasic1"
+					ngbDropdownToggle>My Castle Siege</button>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button class="dropdown-item">My Cards</button>
+					<button class="dropdown-item">My Decks</button>
+					<button class="dropdown-item">My Stats</button>
+					<button class="dropdown-item">Marketplace</button>
+				</div>
+			</div>
+		</ul>
+
+		<ul class="navbar-nav">
+			<div ngbDropdown class="d-inline-block text-right">
+				<button class="btn btn-outline-primary" id="dropdownBasic1"
+					ngbDropdownToggle>
+					<i class="fa fa-user fa-1x"></i>
+				</button>
+				<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button class="dropdown-item">User Settings</button>
+					<button class="dropdown-item">Log out</button>
+				</div>
+			</div>
+		</ul>
+	</div>
+</nav>
